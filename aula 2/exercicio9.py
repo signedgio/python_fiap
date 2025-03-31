@@ -1,5 +1,5 @@
-distancia = int(input("qual é a distância a ser percorrida?: "))
-velocidade = int(input("qual a velocidade do veículo?: "))
+distancia = float(input("qual é a distância a ser percorrida?: "))
+velocidade = float(input("qual a velocidade do veículo?: "))
 
 tempo = distancia / velocidade
-print(tempo, "este é o tempo do percurso: ")
+print(f"este é o tempo do percurso: {tempo:.2f}" )
