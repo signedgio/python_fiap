@@ -1,5 +1,6 @@
 x = int(input("Início da tabuada: "))
 y = int(input("Final da tabuada: "))
-tabuada = y
+t = int(input("Tabuada de: "))
 while x <= y:
-    print(z*x)
+    print(x*t)
+    x = x + 1
