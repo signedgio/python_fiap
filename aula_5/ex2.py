@@ -19,3 +19,18 @@ lista2 = [6, 7, 8, 9, 10]
 lista3 = lista1 + lista2
 print(lista3)
 
+# outro jeito:
+
+lista = ["Gio", "Ian", "Davi", "Pedro"]
+listaNovosAlunos = []
+
+while True:
+    novosNomes = input("Qual é o seu nome? (digite fim para sair) ")
+    if novosNomes == "fim":
+        break
+    listaNovosAlunos.append(novosNomes)
+
+listaNova = []
+listaNova = lista + listaNovosAlunos
+# listaNova.extend(lista + listaNovosAlunos)
+print(listaNova)
