@@ -25,7 +25,8 @@ x = 0
 while x < len(L):
     if L[x] == pesquisa:
         break
-    x += 1
+    x += 1 ## colocamos isso aqui prao x lá de cima percorrer todas as posições da lista (4 nesse caso) e ver se o número
+    # escolhido está lá em alguma das psoições x. 
 
 if x < len(L):
     print(f"{pesquisa} achado na posição {x}.")
