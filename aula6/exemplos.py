@@ -22,7 +22,7 @@ else:
     print("Nome não encontrado.")
 
 # tiramos o else de dentro do bloco do for para que imprima apenas uma mensagem.
-#caso contrário, vai imprimir a mesma frase numa quantidade igual à quantidade de
+# caso contrário, vai imprimir a mesma frase numa quantidade igual à quantidade de
 # elementos na lista.
 
 # .capitalize() serve pra independente do jeito que escrever (maiúsculo ou minúsculo),
