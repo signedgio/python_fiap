@@ -79,7 +79,78 @@ while True:
 
 #################################################################################################################################
 
+# Vejamos uma relação de estoque de mercadorias na qual
+# teríamos, além do preço, a quantidade de estoque. Calcular
+# o preço total de venda e atualizar a quantidade de estoque.
 
+estoque = {"tomate": [1000, 2.3], "alface": [500, 0.45], "batata": [2001, 1.2], "feijão": [100, 1.5]}
+venda = [["tomate", 5], ["batata", 10], ["alface", 5]]
+total = 0
+for operacao in venda:
+    produto, quantidade = operacao
+    preco = estoque[produto][1]
+    custo = preco * quantidade
+    print(f"{produto}: {quantidade} x {preco} = {custo}")
+    estoque[produto][0] -= quantidade
+    total += custo
+    print(f"Custo total: {total}")
+for chave, dados in estoque.items():
+    print("Descrição: ", chave)
+    print("Quantidade: ", dados[0])
+    print(f"Preço: R$ {dados[1]}")
+
+######################################################################################
+
+# Modificar o código anterior com cursos, valor da mensalidade e quantidade de vagas.
+# Calcular o preço da mensalidade anual e atualizar a quantidade de vagas ocupadas.
+
+cursos = {"mecatrônica": [2250, 40],
+          "cyber security": [1800, 40],
+          "administração": [1500, 40]}
+vagasOcupadas = [["mecatrônica", 19], ["cyber security", 10], ["administração", 5]]
+
+totalMensalidade = 0
+
+for novosAlunos in vagasOcupadas:
+    nomeDoCurso, vagas = novosAlunos
+    preco = cursos[nomeDoCurso][0]
+    custo = preco * 12
+    cursoEscolhido = input("Digite o curso que gostaria de buscar: ")
+    print(f"O curso {cursoEscolhido} foi encontrado no sistema. Total de vagas ocupadas no curso: {vagas}. ")
+    print(f"Valor anual do curso: R${custo},00.")
+    cursos[nomeDoCurso][1] -= vagas
+    totalMensalidade += custo
+
+for chave, dados in cursos.items():
+    print("Descrição: ", chave)
+    print(f"Preço: R$ {dados[0]}")
+    print("vagas: ", dados[1])
+
+
+#######################################################################################
+
+# Tuplas:
+
+## empacotamento:
+tupla = (100, 200, 300)
+print(tupla)
+
+## desempacotamento:
+a, b, c = tupla
+print(a)
+print(b)
+print(c)
+
+## diferenças das tuplas:
+
+tupla = ("Michele")
+print(len(tupla))
+## nesse caso, vai imprimir no terminal o número "7". pro python entender que é uma tupla,
+## tem que colocar essa vírgula depois.
+
+tupla = ("Michele",)
+print(len(tupla))
+## aqui vai imprimir "1" no terminal.
 
 
 
