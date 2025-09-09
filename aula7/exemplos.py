@@ -122,9 +122,9 @@ for novosAlunos in vagasOcupadas:
     totalMensalidade += custo
 
 for chave, dados in cursos.items():
-    print("Descrição: ", chave)
+    print("Curso: ", chave)
     print(f"Preço: R$ {dados[0]}")
-    print("vagas: ", dados[1])
+    print("Vagas: ", dados[1])
 
 
 #######################################################################################
