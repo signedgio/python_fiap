@@ -22,14 +22,7 @@ while True:
     else:
         print("Produto não disponível no estoque.")
 
-for operacao in venda:
-    produto, quantidade = operacao
-    preco = estoque[produto][1]
-    custo = preco * quantidade
-    print(f"{produto}: {quantidade} x {preco} = {custo}")
-    estoque[produto][0] -= quantidade
-    totalVendidos += custo
-    print(f"Custo total: {totalVendidos}")
+
 
 
 
