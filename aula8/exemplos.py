@@ -122,10 +122,10 @@ print(frase6)
 # end=’caractere‘ – Especifica o caractere que é impresso no
 # final da linha. O padrão é \n, uma quebra de linha.
 
-# print('Hello', ‘world')
-# print('Hello', ‘world', sep=' ')
-# print('Hello', ‘world', sep=',')
-# print('Hello', ‘world')
-# print('Hello', ‘world', end='\n')
-# print('Hello', ‘world', end='\n\n')
-# print('Hello', ‘world', sep=',', end=‘!')
+print("Hello", "world")
+print('Hello', "world", sep=" ")
+print('Hello', "world", sep=", ")
+print("Hello", "world")
+print('Hello', "world", end="\n")
+print('Hello', "world", end="\n\n")
+print('Hello', "world", sep=", ", end="!")
